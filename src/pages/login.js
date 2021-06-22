@@ -1,6 +1,5 @@
 import {useState} from 'react'
 import axios from 'axios'
-import { Redirect } from 'react-router'
 
 const Login = () => {
 
@@ -13,7 +12,6 @@ const Login = () => {
     }
 
     const fetchLogin = (email, password) => {
-        alert('bla')
         const uA = navigator.userAgent
         console.log(email, password, uA)
         
@@ -24,7 +22,7 @@ const Login = () => {
                 identity: email,
                 password: password,
                 user_agent: uA,
-                os: 'coba'
+                os: ''
             }
         })
         .then(res => {
