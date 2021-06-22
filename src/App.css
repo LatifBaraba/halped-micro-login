@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  min-height:100vh;
+  min-width:100vh;
+}
+
+.login {
+  width: 600px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+}
